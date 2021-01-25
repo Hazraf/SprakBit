@@ -49,7 +49,7 @@ pipeline {
     
     stage ('Deploy-To-Tomcat') {
             steps {
-                sh 'cp target/*.jar /prod/apache-tomcat-8.5.61/webapps/webapp.jar'     
+                sh 'cp target/*.war /prod/apache-tomcat-8.5.61/webapps/webapp.war'     
            }       
     }
     /*
